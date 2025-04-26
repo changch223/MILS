@@ -7,3 +7,18 @@ outputs/
 *.sh
 .checkpoints/*
 viz/flux.csv
+
+# Ignore large zip files (if they are the ones you want to ignore)
+annotations_trainval2014.zip
+val2014.zip
+
+# Ignore Jupyter checkpoints and Anaconda DB
+.ipynb_checkpoints/
+anaconda_projects/db/
+
+# 如果你希望忽略整个 val2014/ 目录及其下的所有内容（包括那些 jpg），
+# 并且不通过 Git 跟踪这些数据，添加这一行：
+val2014/
+
+# 如果你之前只希望忽略 val2014/ 下的 jpg 文件，并且已经添加了，可以保留那一行：
+# val2014/*.jpg
